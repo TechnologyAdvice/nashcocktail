@@ -1,16 +1,14 @@
 $(document).ready(initialize);
 
 function initialize() {
-  $('a.main-nav').on('click', clickShowNavMenu);
+  $('a.navbar-right').on('click', scrollNav);
 }
 
-function clickShowNavMenu(e) {
+function scrollNav(e) {
   e.preventDefault();
-  if($(window).width() < 768) {
-    if($('ul.navbar-right').is(':hidden')) {
-      $('ul.navbar-right').slideDown();
-    } else {
-      $('ul.navbar-right').slideUp();
-    }
-  }
+  $('html, body').animate({
+      scrollTop: $('#about').offset().top
+  }, 1000);
+  return false;
 }
+
