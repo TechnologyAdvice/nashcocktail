@@ -9,10 +9,14 @@ body {
 
 .dark-section {
   background-color: @darkSection;
+  position: relative;
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6,
   p, ul {
     color: @fontLight;
+  }
+  .container {
+    position: relative;
   }
 }
 
@@ -55,6 +59,7 @@ body {
   border-radius: @btnBorderRadius;
   padding: @btnPadding;
   font-size: @btnFontSize;
+  margin-top: 20px;
   .transition-properties(all 0.1s linear;);
   &:hover {
     background-color: darken(@primaryBtnColor, 5%);
@@ -62,3 +67,60 @@ body {
   }
 }
 
+.cocktail-glass {
+  display: none;
+}
+
+@media (min-width: @screen-sm-min) {
+  #nashcocktail-content {
+    padding-bottom: 200px;
+  }
+  .cocktail-glass {
+    display: block;
+    position: absolute;
+    left: 133px;
+    bottom: -100px;
+    max-width: 484px;
+    height: auto;
+    opacity: 0.25;
+    filter: alpha(opacity=25); /* For IE8 and earlier */
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .cocktail-glass {
+    left: 323px;
+    max-width: 304px;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .cocktail-glass {
+    left: 433px;
+    max-width: 290px;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  #featured-event {
+    margin-top: 30px;
+  }
+}
+
+// About & Featured Company Positions
+#featured-company {
+  margin-top: 50px;
+  img {
+    width: 100%;
+    max-width: @featuredImgMaxWidth;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  #featured-company {
+
+  }
+}
