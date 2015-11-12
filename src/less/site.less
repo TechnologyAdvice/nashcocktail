@@ -48,3 +48,17 @@ body {
   background-size: cover;
 }
 
+.btn-primary {
+  text-transform: uppercase;
+  background-color: @primaryBtnColor;
+  border-color: @primaryBtnBorderColor;
+  border-radius: @btnBorderRadius;
+  padding: @btnPadding;
+  font-size: @btnFontSize;
+  .transition-properties(all 0.1s linear;);
+  &:hover {
+    background-color: darken(@primaryBtnColor, 5%);
+    border-color: darken(@primaryBtnBorderColor, 7%)
+  }
+}
+

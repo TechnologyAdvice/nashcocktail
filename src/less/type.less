@@ -23,5 +23,10 @@ ul, p {
 }
 
 a {
-  color: @blue;
+  color: @linkColor;
+  .transition-properties(color 0.1s linear;);
+  &:hover {
+    color: darken(@linkColor, 10%);
+    text-decoration: none;
+  }
 }
