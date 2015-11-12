@@ -6,6 +6,10 @@ footer {
     font-family: @bodyFont;
     text-transform: uppercase;
     color: @fontLight;
+    .transition-properties(color 0.1s linear;);
+    &:hover {
+      color: @blue;
+    }
   }
   a.social-link {
     font-size: @footerIconFontSize;

@@ -9,8 +9,9 @@ header.navbar {
     font-weight: @boldFontWeight;
     a {
       color: @fontDark;
+      .transition-properties(color 0.1s linear;);
       &:hover {
-        background-color: transparent;
+        color: @blue;
       }
     }
     .seperator {
