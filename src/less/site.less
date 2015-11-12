@@ -78,9 +78,9 @@ body {
   .cocktail-glass {
     display: block;
     position: absolute;
-    left: 133px;
-    bottom: -100px;
-    max-width: 484px;
+    left: 153px;
+    bottom: -200px;
+    max-width: 444px;
     height: auto;
     opacity: 0.25;
     filter: alpha(opacity=25); /* For IE8 and earlier */
@@ -89,15 +89,14 @@ body {
 
 @media (min-width: @screen-md-min) {
   .cocktail-glass {
-    left: 323px;
-    max-width: 304px;
+    left: 300px;
+    max-width: 370px;
   }
 }
 
 @media (min-width: @screen-lg-min) {
   .cocktail-glass {
-    left: 433px;
-    max-width: 290px;
+    left: 400px;
   }
 }
 
@@ -120,7 +119,16 @@ body {
 }
 
 @media (min-width: @screen-sm-min) {
+  #about-nashcocktail {
+    position: relative;
+    top: 50px;
+  }
   #featured-company {
-
+    position: relative;
+    top: 175px;
+    h3 {
+      position: relative;
+      right: 35px;
+    }
   }
 }
