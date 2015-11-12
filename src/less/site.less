@@ -2,6 +2,11 @@ body {
   background-color: @siteBGColor;
 }
 
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #overall {
   position: relative;
   width: 100%;
@@ -38,12 +43,50 @@ body {
   margin-top: 51px;
   #event-title {
     font-weight: @ultraBoldFontWeight;
+    font-size: 2.1em;
+  }
+  h3 {
+    font-size: 1.7em;
   }
   img {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
     margin: 0 auto;
     display: block;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  #hero-section {
+    #event-title {
+      font-size: 2.4em;
+    }
+    h3 {
+      font-size: @fontSizeH3;
+    }
+    p.new-face {
+      position: relative;
+      right: 10px;
+    }
+    img {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  #hero-section {
+    #event-title {
+      font-size: @fontSizeH1;
+    }
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  #hero-section {
+    p.new-face {
+      right: 18px;
+    }
   }
 }
 
@@ -72,7 +115,7 @@ body {
 }
 
 @media (min-width: @screen-sm-min) {
-  #nashcocktail-content {
+  #about {
     padding-bottom: 200px;
   }
   .cocktail-glass {
@@ -124,8 +167,9 @@ body {
     top: 50px;
   }
   #featured-company {
+    margin-top: 0;
     position: relative;
-    top: 175px;
+    top: 125px;
     h3 {
       position: relative;
       right: 35px;
