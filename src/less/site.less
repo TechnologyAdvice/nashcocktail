@@ -1,0 +1,28 @@
+body {
+  background-color: @siteBGColor;
+}
+
+#overall {
+  position: relative;
+  width: 100%;
+}
+
+.dark-section {
+  background-color: @darkSection;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  p, ul {
+    color: @fontLight;
+  }
+}
+
+#hero-section {
+  background: url(../assets/images/hero-bg.jpg) no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  margin-top: 51px;
+  #event-title {
+    font-weight: @ultraBoldFontWeight;
+  }
+}
+
