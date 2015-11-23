@@ -11,6 +11,15 @@ var contentfulClient = {
           access_token: CONTENTFUL_DELIVERY_ACCESS_TOKEN
         }
       });
+    },
+    getSingleAsset: function (spaceId, assetId) {
+      return $.ajax({
+        method: "GET",
+        url: CONTENTFUL_ENDPOINT + "spaces/" + spaceId + "/assets/" + assetId,
+        data: {
+          access_token: CONTENTFUL_DELIVERY_ACCESS_TOKEN
+        }
+      });
     }
   }
 }
