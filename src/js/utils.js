@@ -1,3 +1,5 @@
+var NASHCOCKTAIL_EVENT_FALLBACK_URL = 'http://www.eventbrite.com/o/technologyadvice-8632648480';
+
 contentfulClient.spaces.getEntries('mgvhfvj4jv6c')
   .done(function( res ) {
     console.log('done');
@@ -9,7 +11,7 @@ contentfulClient.spaces.getEntries('mgvhfvj4jv6c')
       updateAboutFeaturedCompany(eventEntry.fields.aboutEventSponsor);
       updateEventDate(eventEntry.fields.eventStartTime);
     } else {
-      updateRegistrationLinks('http://www.eventbrite.com/o/technologyadvice-8632648480');
+      updateRegistrationLinks(NASHCOCKTAIL_EVENT_FALLBACK_URL);
     }
   });
 
@@ -25,5 +27,6 @@ function updateAboutFeaturedCompany(content) {
 }
 
 function updateEventDate(startDate) {
-
+  var formattedDate = $.datepicker.formatDate('MM d, yy', new Date(startDate));
+  $('#event-title').empty().append(formattedDate);
 }
