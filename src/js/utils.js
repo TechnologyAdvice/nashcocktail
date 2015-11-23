@@ -2,10 +2,8 @@ var NASHCOCKTAIL_EVENT_FALLBACK_URL = 'http://www.eventbrite.com/o/technologyadv
 
 contentfulClient.spaces.getEntries('mgvhfvj4jv6c')
   .done(function( res ) {
-    console.log('done');
     var eventEntry;
     if (res.items.length > 0) {
-      console.log(res.items);
       eventEntry = res.items[0];
       updateRegistrationLinks(eventEntry.fields.eventLink);
       updateAboutFeaturedCompany(eventEntry.fields.aboutEventSponsor);
