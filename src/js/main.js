@@ -5,6 +5,7 @@ function initialize() {
 }
 
 function smoothScroll() {
+  e.preventDefault();
   $('html, body').animate({
       scrollTop: $(this.hash).offset().top
   }, 700);
