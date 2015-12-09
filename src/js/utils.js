@@ -27,7 +27,7 @@ function updateAboutFeaturedCompany(content) {
 }
 
 function updateEventDate(startDate) {
-  var formattedDate = $.datepicker.formatDate('MM d, yy', new Date(startDate));
+  var formattedDate =moment(new Date(startDate)).format('MMMM D, YYYY');
   $('#event-title').empty().append(formattedDate);
 }
 
