@@ -14,6 +14,7 @@
   <!-- Vendors -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 </head>
 <body>
   <div id="overall">
@@ -46,9 +47,11 @@
           </div>
           <div id="featured-event" class="col-sm-6 col-md-6">
             <h3>Our next event will be:</h3>
-            <h1 id="event-title">December 8th, 2015</h1>
+            <h1 id="event-title">Currently Unavailable</h1>
             <p>6:00pm - 8:00pm. Hosted at <a href="https://www.google.com/maps/place/500+Interstate+Blvd+S,+Nashville,+TN+37210/@36.1328003,-86.758762,17z/data=!3m1!4b1!4m2!3m1!1s0x88646609ff279a6f:0xe3c6150815a94d91" target="_blank">TechnologyAdvice</a></p>
-            <a class="btn btn-primary" target="_blank" href="https://www.eventbrite.com/e/nashcocktail-tickets-19531304658">Register</a>
+            <a class="btn btn-primary event-register-link" target="_blank" href="http://www.eventbrite.com/o/technologyadvice-8632648480">
+              Register
+            </a>
           </div>
         </div>
       </div>
@@ -61,15 +64,19 @@
             <p>Established in July 2010, Nashcocktail is a fun evening of casual networking, and free food and drinks.</p>
             <p>Each month, marketers, developers, digital specialists, recruiters and tech-related individuals network to meet new people, employees and friends. This is a stellar community of creative and supportive individuals who have a passion for their profession.</p>
             <p>Nashcocktail is held on the second Tuesday of the month from 6 - 8 pm at TechnologyAdvice. <a href="http://nashcocktail.us1.list-manage1.com/subscribe?u=db147c4c2fe2baef2af232aa9&id=2bd4266397" target="_blank">Sign up here</a> for updates and important announcements.</p>
-            <a class="btn btn-primary" target="_blank" href="https://www.eventbrite.com/e/nashcocktail-tickets-19531304658">Register</a>
+            <a class="btn btn-primary event-register-link" target="_blank" href="http://www.eventbrite.com/o/technologyadvice-8632648480">
+              Register
+            </a>
           </div>
           <div class="col-sm-2 col-md-2">
           </div>
           <div id="featured-company" class="featured-company col-sm-5 col-md-5">
             <h3 class="section-header text-right">Featured Company</h3>
-            <img src="/assets/images/technologyadvice-logo-light.png">
-            <p>TechnologyAdvice is dedicated to educating, advising, and connecting buyers and sellers of business technology. As a trusted resource in a variety of technology verticals, the company is committed to helping buyers improve and grow their businesses.</p>
-            <p>TechnologyAdvice is based in Nashville, Tenn., and was named to the Inc. 5000 list of America's Fastest-Growing Private Companies in 2014.</p>
+            <img id="featured-company-logo" src="/assets/images/technologyadvice-logo-light.png">
+            <div id="about-featured-company">
+              <p>TechnologyAdvice is dedicated to educating, advising, and connecting buyers and sellers of business technology. As a trusted resource in a variety of technology verticals, the company is committed to helping buyers improve and grow their businesses.</p>
+              <p>TechnologyAdvice is based in Nashville, Tenn., and was named to the Inc. 5000 list of America's Fastest-Growing Private Companies in 2014.</p>
+            </div>
           </div>
         </div>
         <img class="cocktail-glass" src="/assets/images/about-cocktail-bg.png">
@@ -88,7 +95,6 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/main.min.js?v=CACHE_BUST_STRING"></script>
     <footer class="dark-section">
       <div class="container">
         <nav id="footer-nav">
@@ -103,6 +109,6 @@
       </div>
     </footer>
   </div>
-  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="js/main.min.js?v=CACHE_BUST_STRING"></script>
 </body>
 </html>

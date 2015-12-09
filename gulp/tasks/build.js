@@ -37,6 +37,7 @@ gulp.task('build-less', cb => {
 
 gulp.task('build-js', cb => {
   return gulp.src([
+    `${paths.src}/js/contentfulClient.js`,
     `${paths.src}/js/utils.js`,
     `${paths.src}/js/main.js`,
   ])
