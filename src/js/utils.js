@@ -10,6 +10,8 @@ contentfulClient.spaces.getEntries(NASHCOCKTAIL_SPACE_ID)
       updateAboutFeaturedCompany(eventEntry.fields.aboutEventSponsor);
       updateEventDate(eventEntry.fields.eventStartTime);
       retrieveSponsorLogo(NASHCOCKTAIL_SPACE_ID, eventEntry.fields.eventSponsorLogo.sys.id);
+      updateDrinkSponsor(eventEntry.fields.eventDrinkSponsorCompanyName, eventEntry.fields.eventDrinkSponsorCompanyAbout);
+      retrieveDrinkSponsorLogo(NASHCOCKTAIL_SPACE_ID, eventEntry.fields.eventDrinkSponsorCompanyLogo.sys.id);
     } else {
       updateRegistrationLinks(NASHCOCKTAIL_EVENT_FALLBACK_URL);
     }
@@ -22,12 +24,13 @@ function updateRegistrationLinks(url) {
   }
 }
 
+// Featured company logic
 function updateAboutFeaturedCompany(content) {
   $('#about-featured-company').empty().append(content);
 }
 
 function updateEventDate(startDate) {
-  var formattedDate =moment(new Date(startDate)).format('MMMM D, YYYY');
+  var formattedDate = moment(new Date(startDate)).format('MMMM D, YYYY');
   $('#event-title').empty().append(formattedDate);
 }
 
@@ -35,5 +38,18 @@ function retrieveSponsorLogo(spaceId, assetId) {
   contentfulClient.spaces.getSingleAsset(spaceId, assetId)
     .done(function(res) {
       $('#featured-company-logo').attr('src', res.fields.file.url).attr('alt', res.fields.title);
+    });
+}
+
+// Drink sponsor logic
+function updateDrinkSponsor(name, about) {
+  $('#drink-sponsor-name').empty().append(name);
+  $('#about-drink-sponsor').empty().append(about);
+}
+
+function retrieveDrinkSponsorLogo(spaceId, assetId) {
+  contentfulClient.spaces.getSingleAsset(spaceId, assetId)
+    .done(function(res) {
+      $('#featured-drink-logo').attr('src', res.fields.file.url).attr('alt', res.fields.title);
     });
 }

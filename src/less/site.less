@@ -12,6 +12,18 @@ body {
   width: 100%;
 }
 
+.blue-section {
+  background-color: @blue;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  p, ul {
+    color: @fontLight;
+  }
+  .container {
+    position: relative;
+  }
+}
+
 .dark-section {
   background-color: @darkSection;
   position: relative;
@@ -29,10 +41,21 @@ body {
   padding: @contentSectionPadding;
 }
 
+.small-content-section {
+  padding: @smallContentSectionPadding;
+}
+
 .section-header {
   border-bottom: 1px solid @blue;
   padding: @sectionHeaderPadding;
   margin: @sectionHeaderMargin;
+  max-width: 650px;
+}
+
+.small-section-header {
+  border-bottom: 1px solid @blue;
+  padding: @smallSectionHeaderPadding;
+  margin: @smallSectionHeaderMargin;
   max-width: 650px;
 }
 
@@ -85,6 +108,11 @@ body {
   #hero-section {
     #event-title {
       font-size: @fontSizeH1;
+    }
+  }
+  #drink-sponsor {
+    .small-section-header {
+      margin-top: .7em;
     }
   }
 }
@@ -180,6 +208,45 @@ body {
     h3 {
       position: relative;
       right: 35px;
+    }
+  }
+}
+
+
+// Drink Sponsor section
+#drink-sponsor {
+  .small-section-header {
+    margin-top: .7em;
+    border-bottom: 1px solid #ffffff;
+    padding: @sectionHeaderPadding;
+    margin: @sectionHeaderMargin;
+  }
+  #featured-drink-logo {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 6em;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  #drink-sponsor {
+    .small-section-header {
+      border-bottom: none;
+      margin: 1em 0 0;
+    }
+    #drink-sponsor-left {
+      width: 18%;
+      float: left;
+      margin-right: 2em;
+    }
+    #drink-sponsor-right {
+      width: 75%;
+      float: left;
+      h3 {
+        margin-top: 0em;
+      }
     }
   }
 }
