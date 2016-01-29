@@ -222,8 +222,11 @@ body {
     margin: @sectionHeaderMargin;
   }
   #featured-drink-logo {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
     height: 6em;
-    width: 6em;
+    object-fit: contain;
   }
 }
 
@@ -234,11 +237,12 @@ body {
       margin: 1em 0 0;
     }
     #drink-sponsor-left {
-      width: 15%;
+      width: 18%;
       float: left;
+      margin-right: 2em;
     }
     #drink-sponsor-right {
-      width: 80%;
+      width: 75%;
       float: left;
       h3 {
         margin-top: 0em;
