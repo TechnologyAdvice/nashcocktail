@@ -10,8 +10,7 @@ contentfulClient.spaces.getEntries(NASHCOCKTAIL_SPACE_ID)
       updateAboutFeaturedCompany(eventEntry.fields.aboutEventSponsor);
       updateEventDate(eventEntry.fields.eventStartTime);
       retrieveSponsorLogo(NASHCOCKTAIL_SPACE_ID, eventEntry.fields.eventSponsorLogo.sys.id);
-      updateDrinkSponsor(eventEntry.fields.eventDrinkSponsorCompanyName);
-      updateAboutDrinkSponsor(eventEntry.fields.eventDrinkSponsorCompanyAbout);
+      updateDrinkSponsor(eventEntry.fields.eventDrinkSponsorCompanyName, eventEntry.fields.eventDrinkSponsorCompanyAbout);
       retrieveDrinkSponsorLogo(NASHCOCKTAIL_SPACE_ID, eventEntry.fields.eventDrinkSponsorCompanyLogo.sys.id);
     } else {
       updateRegistrationLinks(NASHCOCKTAIL_EVENT_FALLBACK_URL);
@@ -43,12 +42,9 @@ function retrieveSponsorLogo(spaceId, assetId) {
 }
 
 // Drink sponsor logic
-function updateAboutDrinkSponsor(content) {
-  $('#about-drink-sponsor').empty().append(content);
-}
-
-function updateDrinkSponsor(content) {
-  $('#drink-sponsor-name').empty().append(content);
+function updateDrinkSponsor(name, about) {
+  $('#drink-sponsor-name').empty().append(name);
+  $('#about-drink-sponsor').empty().append(about);
 }
 
 function retrieveDrinkSponsorLogo(spaceId, assetId) {
