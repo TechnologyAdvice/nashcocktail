@@ -1,5 +1,5 @@
 var NASHCOCKTAIL_EVENT_FALLBACK_URL = 'http://www.eventbrite.com/o/technologyadvice-8632648480';
-var NASHCOCKTAIL_SPACE_ID = 'mgvhfvj4jv6c';
+var NASHCOCKTAIL_SPACE_ID = 'mgvhfvj4jv6cddd';
 
 contentfulClient.spaces.getEntries(NASHCOCKTAIL_SPACE_ID)
   .done(function(res) {
