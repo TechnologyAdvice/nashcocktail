@@ -25,6 +25,7 @@ function updateRegistrationLinks(url) {
   }
 }
 
+// Featured company logic
 function updateAboutFeaturedCompany(content) {
   $('#about-featured-company').empty().append(content);
 }
