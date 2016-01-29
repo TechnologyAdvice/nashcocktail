@@ -12,6 +12,18 @@ body {
   width: 100%;
 }
 
+.blue-section {
+  background-color: @blue;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  p, ul {
+    color: @fontLight;
+  }
+  .container {
+    position: relative;
+  }
+}
+
 .dark-section {
   background-color: @darkSection;
   position: relative;
@@ -29,10 +41,21 @@ body {
   padding: @contentSectionPadding;
 }
 
+.small-content-section {
+  padding: @smallContentSectionPadding;
+}
+
 .section-header {
   border-bottom: 1px solid @blue;
   padding: @sectionHeaderPadding;
   margin: @sectionHeaderMargin;
+  max-width: 650px;
+}
+
+.small-section-header {
+  border-bottom: 1px solid @blue;
+  padding: @smallSectionHeaderPadding;
+  margin: @smallSectionHeaderMargin;
   max-width: 650px;
 }
 
@@ -58,6 +81,12 @@ body {
 
 #featured-event {
   text-align: center;
+}
+
+#drink-sponsor {
+  .small-section-header {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: @screen-sm-min) {
