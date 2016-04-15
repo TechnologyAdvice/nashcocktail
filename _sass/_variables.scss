@@ -1,0 +1,81 @@
+// colors
+$black: #070707;
+$white: #fff;
+
+$blue: #4a96c4;
+$darkGrey: #303030;
+$green: #93c953;
+
+$siteBGColor: $white;
+$headerBGColor: $white;
+$darkSection: $darkGrey;
+
+$linkColor: $blue;
+
+//
+// BUTTONS
+//
+$primaryBtnColor: $blue;
+$primaryBtnBorderColor: $blue;
+
+$btnBorderRadius: 25px;
+$btnPadding: 6px 20px;
+
+$btnFontSize: 1.1em;
+
+//
+// FONTS
+//
+$headerFont: 'Maven Pro', sans-serif;
+$bodyFont: 'Noto Sans', sans-serif;
+
+$fontDark: $black;
+$fontLight: $white;
+
+$headerFontWeight: 500;
+$headerLineHeight: 1.2;
+
+$baseFontSize: 1em;
+$iconFontSize: 1.1em;
+$footerIconFontSize: 1.5em;
+
+$fontSizeH1: 3em;
+$fontSizeH2: 2.5em;
+$fontSizeH3: 2em;
+$fontSizeH4: 1.4em;
+$fontSizeH5: 1.2em;
+$fontSizeH6: 0.85em;
+
+$boldFontWeight: 700;
+$ultraBoldFontWeight: 900;
+
+//
+// SPACING
+//
+$contentSectionPadding: 80px 0 60px;
+$smallContentSectionPadding: 30px 0 30px;
+$sectionHeaderPadding: 0 0 0.5em;
+$sectionHeaderMargin: 0 0 1.3em;
+
+$smallSectionHeaderPadding: 0 0 0.2em;
+$smallSectionHeaderMargin: 0 0 0em;
+
+$featuredImgMaxWidth: 350px;
+
+$navbarBrandPadding: 10px;
+
+$screen-xs:  480px !default;
+$screen-sm:  768px !default;
+$screen-md:  992px !default;
+$screen-lg:  1200px !default;
+
+
+//
+// TRANSITIONS
+//
+// .transition-properties(...) {
+//   -webkit-transition: $arguments;
+//   -moz-transition: $arguments;
+//   -o-transition: $arguments;
+//   transition: $arguments;
+// }
