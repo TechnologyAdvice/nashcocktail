@@ -1,3 +1,5 @@
+// Home page
+
 body {
   background-color: $siteBGColor;
 }
@@ -81,6 +83,17 @@ body {
 
 #featured-event {
   text-align: center;
+}
+
+// Become a Sponsor page
+#sponsor-hero-section {
+  background: url(/images/sponsor-hero-bg.jpg) no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  margin-top: 51px;
+  h3 {
+    font-size: 1.7em;
+  }
 }
 
 // TODO: Double-check breakpoint
