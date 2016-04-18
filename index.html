@@ -4,13 +4,14 @@ next_event_at: 2016-05-10
 next_event_time: 6:00pm - 8:00pm
 next_event_host: TechnologyAdvice
 next_event_host_url: https://www.google.com/maps/place/500+Interstate+Blvd+S,+Nashville,+TN+37210/@36.1328003,-86.758762,17z/data=!3m1!4b1!4m2!3m1!1s0x88646609ff279a6f:0xe3c6150815a94d91
-featured_company: Trumaker
+show_featured_company: true
+featured_company_name: Trumaker
 featured_company_logo_url: /images/featured/trumaker.png
 featured_company_info: >
   We believe men are at their best when creating things they care about...not shopping.
   We believe fit is fashion. We care more about what you do in our clothing than what you look like.
 featured_company_ends_at: 2299-12-31
-become_featured_company_email: heather.neisen@technologyadvice.com
+admin_internal_email: heather.neisen@technologyadvice.com
 ---
 
 <div id="hero-section">
@@ -51,11 +52,11 @@ become_featured_company_email: heather.neisen@technologyadvice.com
       </div>
       <div id="featured-company" class="featured-company col-sm-5 col-md-5">
         <h3 class="section-header text-right">Featured Company</h3>
-        {% if page.featured_company %}
-          <img id="featured-company-logo" src="{{ page.featured_company_logo_url }}">
+        {% if page.show_featured_company %}
+          <img id="featured-company-logo" src="{{ page.featured_company_logo_url }}" alt="{{ page.featured_company_name }}">
           <div id="about-featured-company">
             <p>{{ page.featured_company_info }}</p>
-            <p><a href="mailto:{{ page.become_featured_company_email }}">Contact Us</a> for information about being a Featured Company.</p>
+            <p><a href="mailto:{{ page.admin_internal_email }}">Contact Us</a> for information about being a Featured Company.</p>
           </div>
         {% else %}
           <img id="featured-company-logo" src="/images/technologyadvice-logo-light.png">
@@ -95,7 +96,7 @@ become_featured_company_email: heather.neisen@technologyadvice.com
         <p>As a featured company of NashCocktail, your business will show support for Nashville's technology community. Your company will be recognized by a number of Nashville's finest marketers, developers, digital specialists, recruiters and tech-related individuals.</p>
         <p>Why wouldn't you want to have your brand front and center in front of amazing local influencers?</p>
         <p>We are currently recruiting new (and returning) companies to partner with us. Discover the benefits and opportunities now.</p>
-        <a class="btn btn-primary" href="mailto:{{ page.become_featured_company_email }}?Subject=NashCocktail%20-%20Sponsor%20Inquiry">Let's Partner</a>
+        <a class="btn btn-primary" href="mailto:{{ page.admin_internal_email }}?Subject=NashCocktail%20-%20Sponsor%20Inquiry">Let's Partner</a>
       </div>
     </div>
   </div>
