@@ -196,8 +196,7 @@ body {
   margin-top: 50px;
   img {
     width: auto;
-    max-width: $featuredImgMaxWidth;
-    height: 144px;
+    max-height: $featuredImgMaxHeight;
     display: block;
     margin: 30px auto;
   }
