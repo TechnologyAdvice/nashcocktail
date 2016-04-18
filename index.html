@@ -51,7 +51,7 @@ admin_internal_email: heather.neisen@technologyadvice.com
       <div id="featured-company" class="featured-company col-sm-5 col-md-5">
         <h3 class="editable section-header text-right">Featured Company</h3>
         {% if page.show_featured_company %}
-          <img id="featured-company-logo" src="{{ page.featured_company_logo_url }}" alt="{{ page.featured_company_name }}" />
+          <img id="featured-company-logo" src="{{ page.featured_company_logo_path }}" alt="{{ page.featured_company_name }}" />
           <div id="about-featured-company">
             <p>{{ page.featured_company_info }}</p>
             <p><a href="mailto:{{ page.admin_internal_email }}">Contact Us</a> for information about being a Featured Company.</p>
