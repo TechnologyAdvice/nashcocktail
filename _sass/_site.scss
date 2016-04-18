@@ -94,6 +94,18 @@ body {
   h3 {
     font-size: 1.7em;
   }
+  .sponsor-register-link {
+    margin: 0 auto;
+  }
+}
+
+.page-title {
+  font-weight: $ultraBoldFontWeight;
+  font-size: 3em;
+}
+
+.sponsor-hero-text {
+  text-align: center;
 }
 
 // TODO: Double-check breakpoint
