@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<path id="XMLID_85_" fill="#4A96C4" d="M20.6,26.1c4.6-2.1,7.9-6.7,7.9-12.1c0-7.3-5.9-13.3-13.3-13.3S2,6.6,2,13.9
+	c0,5.5,3.3,10.2,8.1,12.2c0.6,0.2,2.5,0.8,4.8,1.5v-8.1l-3.9-4.4l-4.6-5.1h9.3h4.2l2.8-3.9l0.8,0.6l-2.7,3.3h4.2l-4.6,5.1l-3.7,4.1
+	v8.8c3.5,1,7,1.9,7,1.9S18.9,26.8,20.6,26.1z"/>
+<g id="XMLID_66_">
+	<defs>
+		<polygon id="XMLID_70_" points="15.5,20.3 10.9,15.2 6.3,10.1 15.5,10.1 24.8,10.1 20.2,15.2 		"/>
+	</defs>
+	<clipPath id="XMLID_2_">
+		<use xlink:href="#XMLID_70_"  overflow="visible"/>
+	</clipPath>
+	<polygon id="XMLID_71_" clip-path="url(#XMLID_2_)" fill="#93C953" points="14.2,17.8 22.5,6.1 23.3,6.8 	"/>
+</g>
+<ellipse id="XMLID_57_" transform="matrix(0.8911 0.4538 -0.4538 0.8911 7.732 -6.8164)" fill="#93C953" cx="18.1" cy="12.7" rx="1" ry="1.4"/>
+<ellipse id="XMLID_47_" transform="matrix(0.8911 0.4538 -0.4538 0.8911 8.6271 -5.7421)" fill="#93C953" cx="16.3" cy="15.1" rx="1" ry="1.4"/>
+</svg>

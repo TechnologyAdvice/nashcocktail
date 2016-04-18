@@ -60,7 +60,7 @@ body {
 }
 
 #hero-section {
-  background: url(../assets/images/hero-bg.jpg) no-repeat;
+  background: url(/images/hero-bg.jpg) no-repeat;
   background-size: cover;
   padding: 80px 0;
   margin-top: 51px;
@@ -83,7 +83,8 @@ body {
   text-align: center;
 }
 
-@media (min-width: $screen-xs) {
+// TODO: Double-check breakpoint
+@media (min-width: $screen-sm) {
   #hero-section {
     #event-title {
       font-size: 2.4em;
@@ -104,7 +105,8 @@ body {
   }
 }
 
-@media (min-width: $screen-sm) {
+// TODO: Double-check breakpoint
+@media (min-width: $screen-md) {
   #hero-section {
     #event-title {
       font-size: $fontSizeH1;
@@ -117,7 +119,8 @@ body {
   }
 }
 
-@media (min-width: $screen-md) {
+// TODO: Double-check breakpoint
+@media (min-width: $screen-lg) {
   #hero-section {
     p.new-face {
       right: 18px;
@@ -126,7 +129,7 @@ body {
 }
 
 #become-a-sponsor {
-  background: url(../assets/images/sponsors-bg.jpg) no-repeat;
+  background: url(/images/sponsors-bg.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -138,7 +141,7 @@ body {
   padding: $btnPadding;
   font-size: $btnFontSize;
   margin-top: 20px;
-  // .transition-properties(all 0.1s linear);
+  // .transition-properties(all 0.1s linear;);
   &:hover {
     background-color: darken($primaryBtnColor, 5%);
     border-color: darken($primaryBtnBorderColor, 7%)
@@ -149,7 +152,8 @@ body {
   display: none;
 }
 
-@media (min-width: $screen-xs) {
+// TODO: Double-check breakpoint
+@media (min-width: $screen-sm) {
   #about {
     padding-bottom: 200px;
   }
@@ -165,20 +169,23 @@ body {
   }
 }
 
-@media (min-width: $screen-sm) {
+// TODO: Double-check breakpoint
+@media (min-width: $screen-md) {
   .cocktail-glass {
     left: 300px;
     max-width: 370px;
   }
 }
 
-@media (min-width: $screen-md) {
+// TODO: Double-check breakpoint
+@media (min-width: $screen-lg) {
   .cocktail-glass {
     left: 400px;
   }
 }
 
-@media (min-width: $screen-sm) {
+// TODO: Double-check breakpoint
+@media (min-width: $screen-md) {
   #featured-event {
     margin-top: 30px;
   }
@@ -196,7 +203,7 @@ body {
   }
 }
 
-@media (min-width: $screen-xs) {
+@media (min-width: $screen-sm) {
   #about-nashcocktail {
     position: relative;
     top: 50px;
@@ -230,7 +237,7 @@ body {
   }
 }
 
-@media (min-width: $screen-sm) {
+@media (min-width: $screen-md) {
   #drink-sponsor {
     .small-section-header {
       border-bottom: none;
