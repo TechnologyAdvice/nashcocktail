@@ -61,6 +61,10 @@ body {
   max-width: 650px;
 }
 
+.no-left-pad {
+  padding-left: 0;
+}
+
 #hero-section {
   background: url(/images/hero-bg.jpg) no-repeat;
   background-size: cover;
@@ -126,7 +130,11 @@ img.single-logo {
   margin: 1em auto;
 }
 
-@media (min-width: $screen-md) {
+img.smaller-logo {
+  padding: 1em 4em !important;
+}
+
+@media (min-width: $screen-sm) {
   img.single-logo {
     width: 19%;
     margin: 0;
@@ -143,6 +151,15 @@ img.single-logo {
     font-style: italic;
     margin: 0;
   }
+}
+
+//Contact form styles
+.form-control {
+  border-radius: 0px;
+}
+
+label {
+  font-family: $bodyFont;
 }
 
 // TODO: Double-check breakpoint
@@ -203,6 +220,7 @@ img.single-logo {
   padding: $btnPadding;
   font-size: $btnFontSize;
   margin-top: 20px;
+  font-family: $bodyFont;
   // .transition-properties(all 0.1s linear;);
   &:hover {
     background-color: darken($primaryBtnColor, 5%);
