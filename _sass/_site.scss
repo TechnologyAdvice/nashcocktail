@@ -118,10 +118,31 @@ body {
   padding: 80px 0;
 }
 
-.single-logo {
+img.single-logo {
+  width: 48%;
   display: inline-block;
-  max-width: 20%;
-  max-height: 40px;
+  padding: 1em 2em;
+  height: auto;
+  margin: 1em auto;
+}
+
+@media (min-width: $screen-md) {
+  img.single-logo {
+    width: 19%;
+    margin: 0;
+  }
+}
+
+#sponsor-quote-section {
+  padding: 3.25em 0;
+}
+
+.quote-text {
+  p {
+    font-size: 1.25em;
+    font-style: italic;
+    margin: 0;
+  }
 }
 
 // TODO: Double-check breakpoint
