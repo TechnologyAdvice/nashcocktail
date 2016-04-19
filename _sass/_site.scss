@@ -108,6 +108,22 @@ body {
   text-align: center;
 }
 
+#sponsor-info-section {
+  padding: 80px 0px;
+}
+
+#sponsor-logo-section {
+  background: url(/images/sponsor-logo-bg.jpg) no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.single-logo {
+  display: inline-block;
+  max-width: 20%;
+  max-height: 40px;
+}
+
 // TODO: Double-check breakpoint
 @media (min-width: $screen-sm) {
   #hero-section {
