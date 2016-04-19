@@ -2,12 +2,9 @@ machine:
   ruby:
     version: 2.2.4
 
-dependencies:
-  post:
-    - jekyll build
-
 deployment:
   beta:
     branch: jekyll-port
     commands:
+      - jekyll build
       - s3_website push
