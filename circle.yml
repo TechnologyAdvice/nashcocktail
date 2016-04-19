@@ -1,0 +1,10 @@
+machine:
+  ruby:
+    version: 2.2.4
+
+deployment:
+  beta:
+    branch: jekyll-port
+    commands:
+      - jekyll build
+      - s3_website push
