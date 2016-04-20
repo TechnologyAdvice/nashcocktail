@@ -6,5 +6,5 @@ deployment:
   beta:
     branch: jekyll-port
     commands:
-      - jekyll build
+      - bundle exec jekyll build
       - s3_website push
