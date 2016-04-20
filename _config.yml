@@ -9,8 +9,9 @@
 locale: "en-US"
 title: Nashcocktail
 description: Networking for Nashville marketing professionals.
-url: "http://nashcoktail.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
+include: ["_pages"]
 
 # SEO Related
 google_site_verification:

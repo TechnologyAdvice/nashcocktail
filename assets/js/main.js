@@ -1,7 +1,6 @@
 $(document).ready(initialize)
 
 function initialize() {
-  $('.header-link').on('click', smoothScroll)
   $('.sponsor-register-link').on('click', smoothScroll)
 }
 

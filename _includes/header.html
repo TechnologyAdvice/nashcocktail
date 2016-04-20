@@ -1,7 +1,7 @@
 <header class="navbar navbar-static-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{ site.url }}">
         <svg width="30" height="30">
           <image xlink:href="/images/header-logo.svg" width="30" height="30" />
         </svg>
@@ -9,9 +9,11 @@
     </div>
     <nav id="main-nav">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="header-link">About</a></li>
-        <li class="seperator">\</li>
-        <li><a href="#become-a-sponsor" class="header-link">Become a Sponsor</a></li>
+        {% for link in site.data.navigation.main %}
+          <li>
+            <a href="{{ site.url }}{{ link.url }}" class="header-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
         <li class="social-nav-item">
           <a href="https://www.facebook.com/nashcocktail" target="_blank" class="social-link">
             <i class="fa fa-facebook-square"></i>
