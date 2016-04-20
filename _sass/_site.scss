@@ -52,6 +52,7 @@ body {
   padding: $sectionHeaderPadding;
   margin: $sectionHeaderMargin;
   max-width: 650px;
+  display: inline-block;
 }
 
 .small-section-header {
@@ -108,7 +109,13 @@ body {
 
 .page-title {
   font-weight: $ultraBoldFontWeight;
-  font-size: 3em;
+  font-size: 2em;
+}
+
+@media (min-width: $screen-sm) {
+  .page-title {
+    font-size: 3em;
+  }
 }
 
 .sponsor-hero-text {
@@ -151,18 +158,29 @@ img.smaller-logo {
 }
 
 #sponsor-quote-section {
-  padding: 3.25em 0;
+  .company-name {
+    opacity: 0.75;
+    font-size: 1.65em;
+    margin-top: 0.75em;
+  }
 }
 
 .quote-text {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
   p {
-    font-size: 1.25em;
+    font-size: 1.45em;
     font-style: italic;
     margin: 0;
   }
 }
 
 //Contact form styles
+#contact-section {
+  padding-bottom: 90px;
+}
+
 .form-control {
   border-radius: 0px;
 }
@@ -295,6 +313,9 @@ label {
   #about-nashcocktail {
     position: relative;
     top: 50px;
+    .section-header {
+      display: block;
+    }
   }
   #featured-company {
     margin-top: 0;
@@ -303,6 +324,9 @@ label {
     h3 {
       position: relative;
       right: 35px;
+    }
+    .section-header {
+      display: block;
     }
   }
 }

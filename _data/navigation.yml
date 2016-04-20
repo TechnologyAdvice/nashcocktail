@@ -1,0 +1,10 @@
+# main links links
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Become a Sponsor"
+    url: /sponsor
+
+  - title: "About"
+    url: /
