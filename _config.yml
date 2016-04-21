@@ -93,6 +93,11 @@ kramdown:
 permalink: /:title/
 timezone: America/Chicago
 
+# Sass Compression
+# https://jekyllrb.com/docs/assets/#sassscss
+sass:
+  style: compressed
+
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
