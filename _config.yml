@@ -7,8 +7,8 @@
 
 # Site settings
 locale: "en-US"
-title: Nashcocktail
-description: Networking for Nashville marketing professionals.
+title: "Nashcocktail"
+description: "Networking for Nashville marketing professionals."
 url: "" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 include: ["_pages"]
@@ -24,11 +24,13 @@ segment_io:
 
 # Social Sharing
 twitter:
-  username:
+  username: "nashcocktail"
 facebook:
-  username:
+  username: "nashcocktail"
   app_id:
   publisher:
+linkedin:
+  group_id: "8474059"
 og_image: # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles

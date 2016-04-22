@@ -1,3 +1,5 @@
+{% include base_path.html %}
+
 <header class="navbar navbar-static-top">
   <div class="container">
     <div class="navbar-header">
@@ -14,21 +16,27 @@
             <a href="{{ site.url }}{{ link.url }}" class="header-link">{{ link.title }}</a>
           </li>
         {% endfor %}
-        <li class="social-nav-item">
-          <a href="https://www.facebook.com/nashcocktail" target="_blank" class="social-link">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-        </li>
-        <li class="social-nav-item">
-          <a href="https://twitter.com/nashcocktail" target="_blank" class="social-link">
-            <i class="fa fa-twitter-square"></i>
-          </a>
-        </li>
-        <li class="social-nav-item">
-          <a href="https://www.linkedin.com/groups/8474059" target="_blank" class="social-link">
-            <i class="fa fa-linkedin-square"></i>
-          </a>
-        </li>
+        {% if site.facebook.username %}
+          <li class="social-nav-item">
+            <a href="https://www.facebook.com/{{ site.facebook.username }}" target="_blank" class="social-link">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+        {% endif %}
+        {% if site.twitter.username %}
+          <li class="social-nav-item">
+            <a href="https://twitter.com/{{ site.twitter.username }}" target="_blank" class="social-link">
+              <i class="fa fa-twitter-square"></i>
+            </a>
+          </li>
+        {% endif %}
+        {% if site.linkedin.group_id %}
+          <li class="social-nav-item">
+            <a href="https://www.linkedin.com/groups/8474059" target="_blank" class="social-link">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </li>
+        {% endif %}
       </ul>
     </nav>
   </div>

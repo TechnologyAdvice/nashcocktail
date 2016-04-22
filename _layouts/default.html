@@ -2,9 +2,11 @@
 layout: compress
 ---
 <!doctype html>
-<html>
-
-  {% include head.html %}
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
   <body>
 
@@ -14,8 +16,10 @@ layout: compress
       {{ content }}
     </main>
 
-    {% include footer.html %}
-
+    <footer>
+      {% include footer.html %}
+      {% include footer/custom.html %}
+    </footer>
   </body>
 
 </html>
