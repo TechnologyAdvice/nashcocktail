@@ -3,7 +3,7 @@ machine:
   ruby:
     version: 2.2.4
   environment:
-    JEKYLL_ENV=production
+    JEKYLL_ENV: production
 
 test:
   override:
