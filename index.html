@@ -26,7 +26,7 @@ admin_internal_email: karri.bishop@technologyadvice.com
           <p class="h1" id="event-title">The 2nd Tues. of Every Month</p>
         {% endif %}
         <p>
-          {{ page.next_event_starts_at | date: "%I %p" | downcase }} - {{ page.next_event_ends_at | date: "%I %p" | downcase }}.
+          {{ page.next_event_starts_at | date: "%I:%M%p" | downcase }} - {{ page.next_event_ends_at | date: "%I%M%p" | downcase }}.
           Hosted at <a href="{{ page.next_event_host_path }}" target="_blank">{{ page.next_event_host }}</a>
         </p>
         <a class="btn btn-primary event-register-link" target="_blank" href="http://www.eventbrite.com/o/technologyadvice-8632648480">
