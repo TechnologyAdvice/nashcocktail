@@ -16,7 +16,7 @@ admin_internal_email: karri.bishop@technologyadvice.com
     <div class="row">
       <div class="col-sm-6 col-md-6">
         <p class="editable new-face text-center"><em>Welcome to the new face of</em></p>
-        <img src="/images/large-logo.svg" />
+        <img src="/images/large-logo.svg" alt="{{ site.title }}" />
       </div>
       <div id="featured-event" class="col-sm-6 col-md-6">
         <p class="h3">Our next event will be:</p>
@@ -26,7 +26,7 @@ admin_internal_email: karri.bishop@technologyadvice.com
           <p class="h1" id="event-title">The 2nd Tues. of Every Month</p>
         {% endif %}
         <p>
-          {{ page.next_event_starts_at | date: "%I:%M%p" | downcase }} - {{ page.next_event_ends_at | date: "%I%M%p" | downcase }}.
+          {{ page.next_event_starts_at | date: "%I:%M%p" | downcase }} - {{ page.next_event_ends_at | date: "%I:%M%p" | downcase }}.
           Hosted at <a href="{{ page.next_event_host_path }}" target="_blank">{{ page.next_event_host }}</a>
         </p>
         <a class="btn btn-primary event-register-link" target="_blank" href="http://www.eventbrite.com/o/technologyadvice-8632648480">
@@ -59,7 +59,7 @@ admin_internal_email: karri.bishop@technologyadvice.com
             <p><a href="mailto:{{ page.admin_internal_email }}">Contact Us</a> for information about being a Featured Company.</p>
           </div>
         {% else %}
-          <img id="featured-company-logo" src="/images/technologyadvice-logo-light.png" />
+          <img id="featured-company-logo" src="/images/technologyadvice-logo-light.png" alt="TechnologyAdvice" />
           <div id="about-featured-company">
             <p>TechnologyAdvice is dedicated to educating, advising, and connecting buyers and sellers of business technology. As a trusted resource in a variety of technology verticals, the company is committed to helping buyers improve and grow their businesses.</p>
             <p>TechnologyAdvice is based in Nashville, Tenn., and was named to the Inc. 5000 list of America's Fastest-Growing Private Companies in 2014.</p>
@@ -67,7 +67,7 @@ admin_internal_email: karri.bishop@technologyadvice.com
         {% endif %}
       </div>
     </div>
-    <img class="cocktail-glass" src="/images/about-cocktail-bg.png" />
+    <img class="cocktail-glass" src="/images/about-cocktail-bg.png" alt="About" />
   </div>
 </div>
 <div id="drink-sponsor" class="small-content-section blue-section">
@@ -78,7 +78,7 @@ admin_internal_email: karri.bishop@technologyadvice.com
       </div>
       <div id="drink-sponsor-info" class="col-md-9">
         <div id="drink-sponsor-left">
-          <img id="featured-drink-logo" src="/images/drink-icon-white.png" />
+          <img id="featured-drink-logo" src="/images/drink-icon-white.png" alt="A cocktail glass" />
         </div>
         <div id="drink-sponsor-right">
           <h3 class="editable" id="drink-sponsor-name">Become a Sponsor</h3>

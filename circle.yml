@@ -1,6 +1,13 @@
 machine:
+  timezone: America/Chicago
   ruby:
     version: 2.2.4
+  environment:
+    JEKYLL_ENV=production
+
+test:
+  override:
+    - bundle exec htmlproofer ./_site --disable-external
 
 deployment:
   beta:
