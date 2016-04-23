@@ -21,7 +21,7 @@ admin_internal_email: karri.bishop@technologyadvice.com
       <div id="featured-event" class="col-sm-6 col-md-6">
         <p class="h3">Our next event will be:</p>
         {% if page.next_event_starts_at and page.next_event_starts_at > site.time %}
-          <p class="h1" id="event-title">{{ page.next_event_at | date: "%B %-d, %Y" }}</p>
+          <p class="h1" id="event-title">{{ page.next_event_starts_at | date: "%B %-d, %Y" }}</p>
         {% else %}
           <p class="h1" id="event-title">The 2nd Tues. of Every Month</p>
         {% endif %}
