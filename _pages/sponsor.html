@@ -54,14 +54,65 @@ author_profile: false
 </div>
 <div id="sponsor-quote-section" class="blue-section content-section">
   <div class="container">
-    <div class="quote-text">
-      <p class="editable">
-        “We sponsored the event one month and the turnout was great! It was
-        fantastic to have our brand in front of so many local business
-        professionals in Nashville!”
-      </p>
-      <h4 class="editable company-name">Unknown Nashville Company</h4>
+    <div class="col-md-6 quote-left">
+      {% if page.show_quote_one %}
+      <div class="quote-text">
+        <div class="quote-company-logo">
+          <img src="{{ page.featured_quote_two_logo }}" alt="{{ page.quote_two_company }}" />
+        </div>
+        <p class="editable">
+          {{ page.quote_one_text }}
+        </p>
+        <h4 class="editable sponsor-name">{{ page.quote_one_name }}</h4>
+        <h4 class="editable company-name">{{ page.quote_one_company }}</h4>
+      </div>
+      {% else %}
+      <div class="quote-text">
+        <div class="quote-company-logo">
+          <img src="/images/launchpeer-logo.png" alt="Launchpeer" />
+        </div>
+        <p class="editable">
+          "NashCocktail was a no brainer for our company to sponsor. It gave us
+          the access we needed to the tech community in Nashville and provided
+          us genuine connections to friends, clients, colleagues and mentors
+          that otherwise would have been difficult to attain. Sponsoring the
+          event continues to provide benefits even months after sponsoring and
+          we'd definitely do it again!"
+        </p>
+        <h4 class="editable sponsor-name">Jake Hare</h4>
+        <h4 class="editable company-name">Launchpeer</h4>
+      </div>
+      {% endif %}
     </div>
+    <div class="col-md-6 quote-right">
+      {% if page.show_quote_two %}
+      <div class="quote-text">
+        <div class="quote-company-logo">
+          <img src="{{ page.featured_quote_two_logo }}" alt="{{ page.quote_two_company }}" />
+        </div>
+        <p class="editable">
+          {{ page.quote_two_text }}
+        </p>
+        <h4 class="editable sponsor-name">{{ page.quote_two_name }}</h4>
+        <h4 class="editable company-name">{{ page.quote_two_company }}</h4>
+      </div>
+      {% else %}
+      <div class="quote-text">
+        <div class="quote-company-logo">
+          <img src="/images/devdigital-logo.png" alt="DevDigital" />
+        </div>
+        <p class="editable">
+          “Sponsoring NashCocktail enabled DevDigital to get our message out to
+          a large group of the Nashville tech community while at the same time
+          having the advantage of spending one-on-one time with individuals.
+          I highly recommend sponsoring and we plan on doing it again.”
+        </p>
+        <h4 class="editable sponsor-name">Mitch Ballard</h4>
+        <h4 class="editable company-name">DevDigital</h4>
+      </div>
+      {% endif %}
+    </div>
+    <div class="clearfix"></div>
   </div>
 </div>
 <div id="sponsor-logo-section">
@@ -85,7 +136,7 @@ author_profile: false
         class="contact-form"
         name="email_form"
         class="form-group blog-email-submission"
-        action=""
+        action="//marketing.technologyadvice.com/acton/eform/15852/005c/d-ext-0002"
         enctype="multipart/form-data"
         accept-charset="UTF-8"
         target="_blank"

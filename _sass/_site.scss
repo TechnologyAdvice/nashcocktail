@@ -158,10 +158,11 @@ img.smaller-logo {
 }
 
 #sponsor-quote-section {
+  .sponsor-name {
+    margin-top: 0.75em;
+  }
   .company-name {
     opacity: 0.75;
-    font-size: 1.65em;
-    margin-top: 0.75em;
   }
 }
 
@@ -170,9 +171,20 @@ img.smaller-logo {
   margin: 0 auto;
   text-align: center;
   p {
-    font-size: 1.45em;
+    font-size: 1.2em;
+    line-height: 1.6em;
     font-style: italic;
     margin: 0;
+  }
+}
+
+.quote-company-logo {
+  min-height: 70px;
+  img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1em;
   }
 }
 
