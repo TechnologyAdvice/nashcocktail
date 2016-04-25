@@ -1,13 +1,5 @@
-$(document).ready(initialize)
-
-function initialize() {
-  $('.sponsor-register-link').on('click', smoothScroll)
-}
-
-function smoothScroll(e) {
-  e.preventDefault()
-  $('html, body').animate({
-      scrollTop: $(this.hash).offset().top
-  }, 700)
-  return false
-}
+---
+# Do not delete this line. This main JS file needs this front matter
+---
+{% include_relative vendor/zepto/zepto.min.js %}
+{% include_relative app.js %}
