@@ -158,21 +158,19 @@ img.smaller-logo {
 }
 
 #sponsor-quote-section {
+  padding: 80px 0;
   .sponsor-name {
-    margin-top: 0.75em;
-  }
-  .company-name {
-    opacity: 0.75;
+    margin-top: 1.1em;
   }
 }
 
 .quote-text {
   max-width: 750px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   p {
     font-size: 1.2em;
-    line-height: 1.6em;
+    line-height: 1.75em;
     font-style: italic;
     margin: 0;
   }
@@ -185,6 +183,26 @@ img.smaller-logo {
     height: auto;
     display: block;
     margin: 0 auto 1em;
+  }
+}
+
+.quote-right {
+  margin-top: 5em;
+  border-top: 1px solid rgba(256, 256, 256, 0.35);
+  padding-top: 3em;
+}
+
+@media (min-width: $screen-sm) {
+  .quote-right {
+    margin-top: 0em;
+    border: none;
+    padding-top: 0em;
+  }
+  .quote-text {
+    text-align: center;
+    p {
+      padding: 0 1.75em;
+    }
   }
 }
 

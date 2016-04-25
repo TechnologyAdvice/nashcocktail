@@ -52,7 +52,7 @@ author_profile: false
     </div>
   </div>
 </div>
-<div id="sponsor-quote-section" class="blue-section content-section">
+<div id="sponsor-quote-section" class="blue-section">
   <div class="container">
     <div class="col-md-6 quote-left">
       {% if page.show_quote_one %}
@@ -63,8 +63,7 @@ author_profile: false
         <p class="editable">
           {{ page.quote_one_text }}
         </p>
-        <h4 class="editable sponsor-name">{{ page.quote_one_name }}</h4>
-        <h4 class="editable company-name">{{ page.quote_one_company }}</h4>
+        <h4 class="editable sponsor-name">{{ page.quote_one_name }} | {{ page.quote_one_company }}</h4>
       </div>
       {% else %}
       <div class="quote-text">
@@ -79,8 +78,7 @@ author_profile: false
           event continues to provide benefits even months after sponsoring and
           we'd definitely do it again!"
         </p>
-        <h4 class="editable sponsor-name">Jake Hare</h4>
-        <h4 class="editable company-name">Launchpeer</h4>
+        <h4 class="editable sponsor-name">Jake Hare | Launchpeer</h4>
       </div>
       {% endif %}
     </div>
@@ -93,8 +91,7 @@ author_profile: false
         <p class="editable">
           {{ page.quote_two_text }}
         </p>
-        <h4 class="editable sponsor-name">{{ page.quote_two_name }}</h4>
-        <h4 class="editable company-name">{{ page.quote_two_company }}</h4>
+        <h4 class="editable sponsor-name">{{ page.quote_two_name }} | {{ page.quote_two_company }}</h4>
       </div>
       {% else %}
       <div class="quote-text">
@@ -107,8 +104,7 @@ author_profile: false
           having the advantage of spending one-on-one time with individuals.
           I highly recommend sponsoring and we plan on doing it again.”
         </p>
-        <h4 class="editable sponsor-name">Mitch Ballard</h4>
-        <h4 class="editable company-name">DevDigital</h4>
+        <h4 class="editable sponsor-name">Mitch Ballard | DevDigital</h4>
       </div>
       {% endif %}
     </div>
