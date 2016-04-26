@@ -66,6 +66,17 @@ body {
   padding-left: 0;
 }
 
+// Navigation styles
+.header-link {
+  padding: 0.5em 0em;
+}
+
+@media (min-width: $screen-sm) {
+  .header-link {
+    padding: 0em;
+  }
+}
+
 #hero-section {
   background: url(/images/hero-bg.jpg) no-repeat;
   background-size: cover;
@@ -94,7 +105,7 @@ body {
 #sponsor-hero-section {
   background: url(/images/sponsor-hero-bg.jpg) no-repeat;
   background-size: cover;
-  padding: 8em 0;
+  padding: 4em 0;
   margin-top: 51px;
   h3 {
     font-size: 1.7em;
@@ -104,6 +115,12 @@ body {
   }
   .hero-subheader {
     margin-bottom: 1.5em;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  #sponsor-hero-section {
+    padding: 8em 0;
   }
 }
 
@@ -219,7 +236,12 @@ label {
   font-family: $bodyFont;
 }
 
-// TODO: Double-check breakpoint
+@media (min-width: $screen-md) {
+  .form-right-side {
+    padding-left: 1.3em;
+  }
+}
+
 @media (min-width: $screen-sm) {
   #hero-section {
     #event-title {
@@ -241,7 +263,6 @@ label {
   }
 }
 
-// TODO: Double-check breakpoint
 @media (min-width: $screen-md) {
   #hero-section {
     #event-title {
@@ -255,7 +276,6 @@ label {
   }
 }
 
-// TODO: Double-check breakpoint
 @media (min-width: $screen-lg) {
   #hero-section {
     p.new-face {
@@ -289,7 +309,6 @@ label {
   display: none;
 }
 
-// TODO: Double-check breakpoint
 @media (min-width: $screen-sm) {
   #about {
     padding-bottom: 200px;
@@ -306,7 +325,6 @@ label {
   }
 }
 
-// TODO: Double-check breakpoint
 @media (min-width: $screen-md) {
   .cocktail-glass {
     left: 300px;
@@ -314,14 +332,12 @@ label {
   }
 }
 
-// TODO: Double-check breakpoint
 @media (min-width: $screen-lg) {
   .cocktail-glass {
     left: 400px;
   }
 }
 
-// TODO: Double-check breakpoint
 @media (min-width: $screen-md) {
   #featured-event {
     margin-top: 30px;
