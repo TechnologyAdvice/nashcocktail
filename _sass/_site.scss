@@ -332,6 +332,7 @@ label {
 #featured-company {
   margin-top: 50px;
   img {
+    max-width: $featuredImgMaxWidth;
     width: auto;
     max-height: $featuredImgMaxHeight;
     display: block;
