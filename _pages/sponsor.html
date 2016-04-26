@@ -140,26 +140,51 @@ author_profile: false
         <div class="form-left-side col-md-5 no-left-pad">
           <div class="form-group">
             <label>Name</label>
-            <input name="First Name" class="form-control" type="text">
+            <input
+              name="First Name"
+              class="form-control"
+              type="text"
+              required
+            >
           </div>
           <div class="form-group">
             <label>Email</label>
-            <input name="Email" class="form-control" type="email">
+            <input
+              name="Email"
+              class="form-control"
+              type="email"
+            >
           </div>
           <div class="form-group">
             <label>Phone</label>
-            <input name="Phone" class="form-control" type="phone">
+            <input
+              name="Phone"
+              class="form-control"
+              type="tel"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              title="Please enter a valid phone number (ex: 555-555-5555)"
+            >
           </div>
           <div class="form-group">
             <label>Company</label>
-            <input name="Company" class="form-control" type="company">
+            <input
+              name="Company"
+              class="form-control"
+              type="company"
+            >
           </div>
         </div>
         <div class="form-right-side col-md-7 no-left-pad">
           <div class="form-group">
             <p>Please let us know when you are interested in sponsoring and if you have any questions</p>
             <label class="sr-only">Message</label>
-            <textarea name="Message" class="form-control" type="text"rows="7"></textarea>
+            <textarea
+              name="Message"
+              class="form-control"
+              type="text"
+              rows="7"
+            >
+            </textarea>
           </div>
           <button type="submit" class="btn btn-primary pull-right">Let's Partner</button>
         </div>
