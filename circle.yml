@@ -1,5 +1,4 @@
 machine:
-  timezone: America/Chicago
   ruby:
     version: 2.2.4
   environment:
