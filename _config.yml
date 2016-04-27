@@ -96,7 +96,6 @@ kramdown:
 
 # Outputting
 permalink: /:title/
-timezone: America/Chicago
 
 # Sass Compression
 # https://jekyllrb.com/docs/assets/#sassscss
