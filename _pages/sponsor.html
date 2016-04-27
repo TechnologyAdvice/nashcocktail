@@ -129,45 +129,47 @@ author_profile: false
     <div id="contact-section-content">
       <h2 class="section-header">Sign Up Now</h2>
       <form
-        class="contact-form"
+        id="sponsorForm"
         name="email_form"
         class="form-group blog-email-submission"
         action="//marketing.technologyadvice.com/acton/eform/15852/005c/d-ext-0002"
         enctype="multipart/form-data"
         accept-charset="UTF-8"
         target="_blank"
+        novalidate
       >
         <div class="form-left-side col-md-5 no-left-pad">
           <div class="form-group">
-            <label>Name</label>
+            <label for="sponsorContact">Name</label>
             <input
-              name="First Name"
+              id="sponsorContact"
+              name="Name"
               class="form-control"
               type="text"
-              required
             >
           </div>
           <div class="form-group">
-            <label>Email</label>
+            <label for="sponsorEmail">Email</label>
             <input
+              id="sponsorEmail"
               name="Email"
               class="form-control"
               type="email"
             >
           </div>
           <div class="form-group">
-            <label>Phone</label>
+            <label for="sponsorPhone">Phone</label>
             <input
+              id="sponsorPhone"
               name="Phone"
               class="form-control"
               type="tel"
-              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-              title="Please enter a valid phone number (ex: 555-555-5555)"
             >
           </div>
           <div class="form-group">
-            <label>Company</label>
+            <label for="sponsorCompany">Company</label>
             <input
+              id="sponsorCompany"
               name="Company"
               class="form-control"
               type="company"
@@ -177,8 +179,9 @@ author_profile: false
         <div class="form-right-side col-md-7 no-left-pad">
           <div class="form-group">
             <p>Please let us know when you are interested in sponsoring and if you have any questions</p>
-            <label class="sr-only">Message</label>
+            <label class="sr-only" for="sponsorMessage">Message</label>
             <textarea
+              id="sponsorMessage"
               name="Message"
               class="form-control"
               type="text"
