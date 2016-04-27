@@ -11,8 +11,8 @@ test:
     - bundle exec htmlproofer ./_site --disable-external
 
 deployment:
-  beta:
-    branch: jekyll-port
+  production:
+    branch: master
     commands:
       - bundle exec jekyll build
       - bundle exec s3_website push
