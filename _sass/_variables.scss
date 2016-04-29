@@ -58,7 +58,7 @@ $sectionHeaderPadding: 0 0 0.2em;
 $sectionHeaderMargin: 0 0 1.3em;
 
 $smallSectionHeaderPadding: 0 0 0.2em;
-$smallSectionHeaderMargin: 0 0 0em;
+$smallSectionHeaderMargin: 0 0 0;
 
 $featuredImgMaxHeight: 144px;
 $featuredImgMaxWidth: 260px;
@@ -70,6 +70,12 @@ $screen-sm:  768px !default;
 $screen-md:  992px !default;
 $screen-lg:  1200px !default;
 
+//
+// FORMS
+//
+$invalidControlColor: #9f3a38;
+$invalidControlBgColor: #fff6f6;
+$invalidControlBorderColor: #e0b4b4;
 
 //
 // TRANSITIONS

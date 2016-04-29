@@ -1,8 +1,6 @@
-@charset "utf-8";
-@import
-  "variables",
-  "type",
-  "site",
-  "header",
-  "footer"
-;
+@import 'variables';
+@import 'type';
+@import 'site';
+@import 'form';
+@import 'header';
+@import 'footer';

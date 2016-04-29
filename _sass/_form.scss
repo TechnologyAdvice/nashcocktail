@@ -1,0 +1,8 @@
+form {
+  .unhappy {
+    background-color: $invalidControlBgColor;
+    border-color: $invalidControlBorderColor;
+    color: $invalidControlColor;
+    box-shadow: none;
+  }
+}
