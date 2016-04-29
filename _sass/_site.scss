@@ -1,19 +1,3 @@
-//
-// Form Validation
-// --------------------------------------------------
-form {
-  .unhappy {
-    background-color: #fff6f6;
-    border-color: #e0b4b4;
-    color: #9f3a38;
-    box-shadow: none;
-  }
-}
-
-//
-// Other styles
-// --------------------------------------------------
-
 body {
   background-color: $siteBGColor;
 }
@@ -82,17 +66,17 @@ body {
 
 // Navigation styles
 .header-link {
-  padding: 0.5em 0em;
+  padding: 0.5em 0;
 }
 
 @media (min-width: $screen-sm) {
   .header-link {
-    padding: 0em;
+    padding: 0;
   }
 }
 
 #hero-section {
-  background: url(/images/hero-bg.jpg) no-repeat;
+  background: url('/images/hero-bg.jpg') no-repeat;
   background-size: cover;
   padding: 80px 0;
   margin-top: 51px;
@@ -117,7 +101,7 @@ body {
 
 // Become a Sponsor page
 #sponsor-hero-section {
-  background: url(/images/sponsor-hero-bg.jpg) no-repeat;
+  background: url('/images/sponsor-hero-bg.jpg') no-repeat;
   background-size: cover;
   padding: 4em 0;
   margin-top: 51px;
@@ -164,7 +148,7 @@ body {
 }
 
 #sponsor-logo-section {
-  background: url(/images/sponsor-logo-bg.jpg) no-repeat;
+  background: url('/images/sponsor-logo-bg.jpg') no-repeat;
   background-size: cover;
   padding: 80px 0;
   display: none;
@@ -217,17 +201,19 @@ img.smaller-logo {
   }
 }
 
+// scss-lint:disable ColorVariable
 .quote-right {
   margin-top: 5em;
   border-top: 1px solid rgba(256, 256, 256, 0.35);
   padding-top: 3em;
 }
+// scss-lint:enable ColorVariable
 
 @media (min-width: $screen-sm) {
   .quote-right {
-    margin-top: 0em;
-    border: none;
-    padding-top: 0em;
+    margin-top: 0;
+    border: 0;
+    padding-top: 0;
   }
   .quote-text {
     text-align: center;
@@ -243,7 +229,7 @@ img.smaller-logo {
 }
 
 .form-control {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 label {
@@ -285,7 +271,7 @@ label {
   }
   #drink-sponsor {
     .small-section-header {
-      margin-top: .7em;
+      margin-top: 0.7em;
     }
   }
 }
@@ -299,7 +285,7 @@ label {
 }
 
 #become-a-sponsor {
-  background: url(/images/sponsors-bg.jpg) no-repeat;
+  background: url('/images/sponsors-bg.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -315,7 +301,7 @@ label {
   // .transition-properties(all 0.1s linear;);
   &:hover {
     background-color: darken($primaryBtnColor, 5%);
-    border-color: darken($primaryBtnBorderColor, 7%)
+    border-color: darken($primaryBtnBorderColor, 7%);
   }
 }
 
@@ -335,7 +321,7 @@ label {
     max-width: 444px;
     height: auto;
     opacity: 0.25;
-    filter: alpha(opacity=25); /* For IE8 and earlier */
+    filter: alpha(opacity = 25); /* For IE8 and earlier */
     pointer-events: none;
   }
 }
@@ -397,8 +383,8 @@ label {
 // Drink Sponsor section
 #drink-sponsor {
   .small-section-header {
-    margin-top: .7em;
-    border-bottom: 1px solid #ffffff;
+    margin-top: 0.7em;
+    border-bottom: 1px solid $white;
     padding: $sectionHeaderPadding;
     margin: $sectionHeaderMargin;
   }
@@ -414,7 +400,7 @@ label {
 @media (min-width: $screen-md) {
   #drink-sponsor {
     .small-section-header {
-      border-bottom: none;
+      border-bottom: 0;
       margin: 1em 0 0;
     }
     #drink-sponsor-left {
@@ -426,7 +412,7 @@ label {
       width: 75%;
       float: left;
       h3 {
-        margin-top: 0em;
+        margin-top: 0;
       }
     }
   }

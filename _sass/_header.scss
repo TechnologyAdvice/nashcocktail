@@ -1,3 +1,21 @@
+#main-nav {
+  text-transform: uppercase;
+  font-weight: $boldFontWeight;
+  padding-right: 10px;
+  float: right;
+  a {
+    color: $fontDark;
+    padding: 0;
+    // .transition-properties(color 0.1s linear;);
+    &:hover {
+      color: $blue;
+    }
+  }
+  .seperator {
+    color: $blue;
+  }
+}
+
 header.navbar {
   width: 100%;
   background-color: $headerBGColor;
@@ -6,23 +24,6 @@ header.navbar {
   margin-bottom: 0;
   .navbar-header {
     float: left;
-  }
-  #main-nav {
-    text-transform: uppercase;
-    font-weight: $boldFontWeight;
-    padding-right: 10px;
-    float: right;
-    a {
-      color: $fontDark;
-      padding: 0;
-      // .transition-properties(color 0.1s linear;);
-      &:hover {
-        color: $blue;
-      }
-    }
-    .seperator {
-      color: $blue;
-    }
   }
   .navbar-right {
     li {

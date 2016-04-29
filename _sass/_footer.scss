@@ -1,5 +1,14 @@
 footer {
   width: 100%;
+  .navbar-nav {
+    li.seperator {
+      display: none;
+    }
+    li.social-links,
+    li.connect {
+      display: inline-block;
+    }
+  }
 }
 #footer-nav-links {
   a {
@@ -10,23 +19,11 @@ footer {
     &:hover {
       color: $blue;
     }
+    .social-link {
+      font-size: $footerIconFontSize;
+      padding-top: 14px;
+      padding-bottom: 14px;
   }
-  a.social-link {
-    font-size: $footerIconFontSize;
-    padding-top: 14px;
-    padding-bottom: 14px;
-  }
-}
-
-footer {
-  .navbar-nav {
-    li.seperator {
-      display: none;
-    }
-    li.social-links,
-    li.connect {
-      display: inline-block;
-    }
   }
 }
 

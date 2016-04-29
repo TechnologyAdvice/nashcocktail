@@ -1,0 +1,28 @@
+---
+scss_files: '_sass/*.scss'
+exclude:
+  - '_sass/vendor/**'
+  - 'css/main.scss'
+verify_signatures: false # https://github.com/brigade/overcommit#disabling-signature-checking
+linters:
+  Comment:
+    enabled: false
+  EmptyLineBetweenBlocks:
+    enabled: false
+  IdSelector:
+    enabled: false # TODO enable, refactoring source to use class selectors
+  ImportantRule:
+    enabled: false # TODO enable, refactoring code to avoid specificity issues
+  LeadingZero:
+    enabled: true
+    style: include_zero
+  NameFormat:
+    enabled: false # TODO enable, refactoring code to use consistent format
+    allow_leading_underscore: false
+    convention: hyphenated_lowercase # or 'camel_case', or 'snake_case', or a regex pattern
+  PropertySortOrder:
+    enabled: false
+  QualifyingElement:
+    enabled: false # TODO enable, refactoring code to avoid specificity issues
+  SingleLinePerSelector:
+    enabled: false
