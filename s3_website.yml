@@ -17,7 +17,7 @@ error_document: 404.html
 gzip:
   - .html
   - .css
-  - .md
+  - .js
 # gzip_zopfli: true
 
 # See http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region for valid endpoints
