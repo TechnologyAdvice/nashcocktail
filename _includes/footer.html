@@ -7,17 +7,17 @@
         <li class="copy">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</li>
         <li class="seperator">|</li>
         <li class="copy connect">Connect With Us</li>
-        {% if site.facebook.username %}
-          <li class="social-links"><a href="https://www.facebook.com/{{ site.facebook.username }}" target="_blank" class="social-link"><i class="fa fa-facebook-square"></i></a></li>
+        {% if site.data.social_networks.facebook.username %}
+          <li class="social-links"><a href="https://www.facebook.com/{{ site.data.social_networks.facebook.username }}" target="_blank" class="social-link"><i class="fa fa-facebook-square"></i></a></li>
         {% endif %}
-        {% if site.twitter.username %}
-          <li class="social-links"><a href="https://twitter.com/{{ site.facebook.username }}" target="_blank" class="social-link"><i class="fa fa-twitter-square"></i></a></li>
+        {% if site.data.social_networks.twitter.username %}
+          <li class="social-links"><a href="https://twitter.com/{{ site.data.social_networks.facebook.username }}" target="_blank" class="social-link"><i class="fa fa-twitter-square"></i></a></li>
         {% endif %}
-        {% if site.linkedin.group_id %}
-          <li class="social-links"><a href="https://www.linkedin.com/groups/{{ site.linkedin.group_id }}" target="_blank" class="social-link"><i class="fa fa-linkedin-square"></i></a></li>
+        {% if site.data.social_networks.linkedin.group_id %}
+          <li class="social-links"><a href="https://www.linkedin.com/groups/{{ site.data.social_networks.linkedin.group_id }}" target="_blank" class="social-link"><i class="fa fa-linkedin-square"></i></a></li>
         {% endif %}
-        {% if site.instagram.username %}
-          <li class="social-links"><a href="https://www.instagram.com/{{ site.instagram.username }}" target="_blank" class="social-link"><i class="fa fa-instagram"></i></a></li>
+        {% if site.data.social_networks.instagram.username %}
+          <li class="social-links"><a href="https://www.instagram.com/{{ site.data.social_networks.instagram.username }}" target="_blank" class="social-link"><i class="fa fa-instagram"></i></a></li>
         {% endif %}
       </ul>
     </nav>
